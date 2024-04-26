@@ -3,7 +3,7 @@
 Improve the following codes to implement SOLID principles in OOP.
 
 ```
-public interface Order {
+public interface solidPrinciples.PlaceOrder {
 
   void calculateTotal(double price, int quantity);
 
@@ -14,18 +14,18 @@ public interface Order {
   void sendEmailNotification(String email);
 }
 
-public class OrderAction implements Order {
+public class OrderAction implements solidPrinciples.PlaceOrder {
 
   @Override
   public void calculateTotal(double price, int quantity) {
     double total = price * quantity;
-    System.out.println("Order total: $" + total);
+    System.out.println("solidPrinciples.PlaceOrder total: $" + total);
   }
 
   @Override
   public void placeOrder(String customerName, String address) {
     // Simulate placing order in a system
-    System.out.println("Order placed for " + customerName + " at " + address);
+    System.out.println("solidPrinciples.PlaceOrder placed for " + customerName + " at " + address);
   }
 
   @Override
@@ -44,7 +44,7 @@ public class OrderAction implements Order {
 public class OrderTest {
 
   public static void main(String[] args) {
-    Order order = new OrderAction();
+    solidPrinciples.PlaceOrder order = new OrderAction();
     order.calculateTotal(10.0, 2);
     order.placeOrder("John Doe", "123 Main St");
 
