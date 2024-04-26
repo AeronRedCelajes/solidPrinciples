@@ -2,6 +2,8 @@ package solidPrinciples;
 
 public class OrderTest {
     public static void main(String[] args) {
+
+        // Printing of each interface's functionality
         TotalCalculator totalCalculator = new OrderAction();
         totalCalculator.calculateTotal(10.0, 2);
 
