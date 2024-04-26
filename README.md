@@ -56,3 +56,4 @@ public class OrderTest {
 ```
 
 ## Class Diagram
+![UML SOLID Principles](https://github.com/AeronRedCelajes/solidPrinciples/assets/142370807/7e4262e6-638a-4997-a560-588e0c13707d)
