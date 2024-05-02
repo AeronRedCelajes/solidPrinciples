@@ -3,16 +3,11 @@ package solidPrinciples;
 public class OrderTest {
     public static void main(String[] args) {
         // Printing of each interface's functionality
-        TotalCalculator totalCalculator = new OrderAction();
-        totalCalculator.calculateTotal(10.0, 2);
+        OrderAction orderAction = new OrderAction();
 
-        PlaceOrder order = new OrderAction();
-        order.placeOrder("John Doe", "123 Main St");
-
-        InvoiceGenerator invoice = new OrderAction();
-        invoice.generateInvoice("order_123.pdf");
-
-        EmailNotify notification = new OrderAction();
-        notification.sendEmailNotification("johndoe@example.com");
+        orderAction.calculateTotal(10.0, 2);
+        orderAction.placeOrder("John Doe", "123 Main St");
+        orderAction.generateInvoice("order_123.pdf");
+        orderAction.sendEmailNotification("johndoe@example.com");
     }
 }
